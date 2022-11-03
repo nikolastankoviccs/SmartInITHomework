@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        background-color: rgb(211, 192, 192);
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="pisanjeforme.html" method="get">
+      <fieldset>
+        <legend>My first form</legend>
+
+        <label for="firstName"> First name: </label>
+        <input type="text" id="firstName" name="firstname" required />
+        <br />
+        <br />
+        <label for="lastName"> Last name: </label>
+        <input type="text" id="lastName" name="lastname" required />
+        <br />
+        <br />
+        <label for="password"> Password: </label>
+        <input type="password" id="password" name="password" required />
+        <br />
+        <br />
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+        <hr style="width: 100%; text-align: center; margin-left: 10" />
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label>
+        <br />
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label>Female</label>
+        <br />
+        <label for="course">Select Course:</label>
+
+        <select name="course" id="course">
+          <option value="aspdotnet">ASP.NET MVC</option>
+          <option value="python">Python</option>
+        </select>
+
+        <hr style="width: 100%; text-align: center; margin-left: 10" />
+        <br />
+        <textarea name="comment" id="comment" cols="40" rows="10">
+        Write your comments here...
+        </textarea>
+        <hr style="width: 100%; text-align: center; margin-left: 10" />
+
+        <label get="difficulty">Training:</label>
+        <br />
+        <input type="checkbox" id="elementary" name="difficulty" />
+        <label get="elementary">Elementary</label>
+        <br />
+        <input type="checkbox" id="advanced" name="difficulty" />
+        <label get="elementary">Advanced</label>
+        <br />
+        <input type="checkbox" id="proficiency" name="difficulty" />
+        <label get="elementary">Proficiency</label>
+        <hr style="width: 100%; text-align: center; margin-left: 10" />
+        <br />
+        <input type="submit" id="submit" value="Submit" />
+        <input type="reset" id="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
